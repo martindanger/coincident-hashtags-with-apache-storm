@@ -85,10 +85,10 @@ public class ExclamationTopology {
       // submitted to the master (Nimbus) node, then these 8 workers will be distributed
       // to the two supervisors evenly: four each. 
       // conf.setNumWorkers(8);
-      conf.setNumWorkers(4);
+      conf.setNumWorkers(6);
 
       // create the topology and submit with config
-	  System.out.println("<<<<<<<<<<<<<<<<<<<<<<<< RUN IN LIVE CLUSTER >>>>>>>>>>>>>>>>>>>>>>>>");
+	  System.out.println("<<<<<<<<< 09:33 <<<<<<<<<<<<<<< RUN IN LIVE CLUSTER >>>>>>>>>>>>>>>>>>>>>>>>");
       StormSubmitter.submitTopology(args[0], conf, builder.createTopology());
 
     } else {
